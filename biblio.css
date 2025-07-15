@@ -1,0 +1,116 @@
+body{ 
+    background-color: #244F68;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Le titre  */
+
+.titre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 100px;
+    margin-left: 8vw;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+
+.titre img {
+    width: 45vw;
+}
+
+h4 {
+    font-size: 1.9vw;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 800px)  {
+    .titre {
+        font-size: 2vw;
+        margin-top: 10vw;
+    }
+
+    .titre img {
+        width: 60vw;
+    }
+
+    h4 {
+        font-size: 2.6vw;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 800px)  {
+    .titre {
+        margin-top: 15vw;
+    }
+}
+
+
+/* Le reste  */
+
+.matiere {
+    width: 90vw;
+    background-color: #357092;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 4.5vw;
+    border-radius: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 4vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.matiere h4 {
+    font-size: 2.5vw;
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entete h2 {
+    font-size: 3vw;
+}
+
+.entete img {
+    width: 5vw;
+    height: 0.4vw;
+}
+
+.countainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 2vw;
+    margin-top: 3.5vw;
+}
+
+.countainer img {
+    /* scale: 1.3; */
+    width: 25vw;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4.6vw;
+    background-color: white;
+
+}
+
+
+.countainer img:hover {
+    scale: 1.04;
+    box-shadow:  0 0px 40px 6px rgb(223 212 212);
+}

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "moderniz";
+  src: url("./fonts/Moderniz.otf") format ('otf');
+}
+
+@font-face {
+  font-family: "montnorm";
+  src: url("./fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'montbold';
+  src: url("./fonts/Montserrat-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'montblack';
+  src: url("./fonts/Montserrat-Black.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'montmedium';
+  src: url("./fonts/Montserrat-Medium.ttf") format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+}
+
+/* Le formulaire et le bas de page  */
+
+.bas-de-page {
+  background-color: #00111b;
+  padding-bottom: 5vw;
+  padding: 1vw 20vw;
+  padding-bottom: 2vw;
+  width: 100vw;
+  margin-top: 30px;
+  margin-top: auto;
+  /* position: absolute;
+  bottom: 0; */
+} 
+
+.info, .bas p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "montnorm",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
+}
+
+.bas {margin: 10px;}
+
+.info {
+  display: flex;
+  color: white;
+  gap: 5vw;
+  justify-content: space-between;
+  font-family: "montnorm",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info .gauche img{
+  width: auto;
+  height: 4vw;
+}
+
+.info .gauche {
+  display: flex;
+  gap: 2vw;
+}
+
+.info-secondaire {
+  display: grid;
+  gap: 1vw;
+  align-items: center;
+}
+
+.info .droite {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.info .droite img{
+  width: auto;
+  height: 2vw;
+}
+@media screen and (max-width: 1000px) {
+  .info, .bas p {
+    font-size: 2vw;
+  }
+
+  .bas {
+    margin-top: 3vw;
+  }
+
+  .bas-de-page {
+    padding: 2VW 3vw;
+    padding-bottom: 4vw;
+  }
+
+  .info .gauche img{
+    width: auto;
+    height: 6vw;
+  }
+
+  .info .droite img{
+    width: auto;
+    height: 4vw;
+  }
+}

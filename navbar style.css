@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "montblack";
+  src: url("./fonts/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montnorm";
+  src: url("./fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "robotolight";
+  src: url("./fonts/Roboto-Light.ttf") format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* La navbar */
+.navbar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  height: 60px;
+  background: rgba(241, 241, 241, 0.671);
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 16px;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  z-index: 1000;
+  transition: 1s;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  /* z-index: 3; */
+}
+
+.geres-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.navbar .geres-logo h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .logo {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.1vw;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "robotolight";
+  transition: 0.1s;
+  
+}
+
+.navbar ul li:hover {
+  scale: 1.05;
+  color: black;
+  background-color: rgba(43, 109, 207, 0.158);
+  border-radius: 20px;
+}
+
+.navbar a {
+  display: flex;
+  font-size: 0.5rem;
+  color: inherit;
+  font-size: 1.3vw;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .icon {
+  width: 1.5vw;
+  height: 1.5vw;
+  display: inline-block;
+}
+
+/* La navbar responsive */
+.navbar-responsive {
+  display: none;
+  position: fixed;
+  align-items: center;
+  height: 30px;
+  background: rgba(241, 241, 241, 0.671);
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 3vw;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  z-index: 1000;
+  transition: 1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+.navbar-responsive h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1vw;
+  font-size: 3.5vw;
+}
+
+.navbar-responsive .logo {
+  width: 6vw;
+  height: 6vw;
+  margin-right: 2vw;
+}
+
+.navbar-responsive .barre {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+/*  NAVBAR RETRACTRER */
+
+.navbar-retracter {
+  display: none;
+  position: fixed;
+  top: 8%;
+  right: 5%;
+  width: 50vw;
+  background: rgba(255, 255, 255, 0.774);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  overflow: hidden;
+  list-style-type: none;
+  gap: 10px; 
+  color: black;
+  transition: height 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10000;
+}
+
+.navbar-retracter a {
+  font-size: 2vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem;
+  font-size: 2vw;
+}
+
+.navbar-retracter a:hover {
+  color: black;
+  background-color: rgba(43, 109, 207, 0.158);
+  border-radius: 20px;
+  scale: 1.1;
+}
+
+.navbar-retracter .icon {
+    width: 2vw;
+    height: 2vw;
+    display: inline-block;
+    margin-right: 0.5rem;
+} 
+
+/* Button  */
+
+.btn-navbar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(241, 241, 241, 0.471);
+  border-radius: 20px;
+  z-index: 1000;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top: -150px;
+  right: 2.5vw;
+  width: 10vw;
+  height: 3.5vw;
+  padding: 1vw 2vw;
+  min-height: 2vw;
+  font-size: 1.5vw;
+  transition: 1s;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 1000px) {
+  .btn-navbar {
+    width: 15vw;
+    height: 4.5vw;
+    font-size: 3vw;
+  }
+}
+
+.btn-navbar:hover{
+  scale: 1.2;
+  background-color: rgba(185, 184, 184, 0.719);
+}
+
+/* Responsive */
+@media screen and (max-width: 800px)  {
+    .navbar {
+        display: none;
+    }
+    .navbar-responsive {
+    display: flex;
+    }
+
+    .navbar-retracter a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px)  {
+    .navbar {
+    display: none;
+    }
+    .navbar-responsive {
+    display: flex;
+    }
+
+    .navbar-retracter {
+        width: 90vw;
+        font-size: 10vw;
+    }
+}
+
