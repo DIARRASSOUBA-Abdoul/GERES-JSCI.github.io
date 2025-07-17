@@ -43,7 +43,7 @@ function transitionToContent(targetContent, clickedButton) {
   setTimeout(() => {
     hideCountainer();
     AfficheContent(targetContent);
-  }, 6000);
+  }, 3000);
 }
 
 // Événements de clic
